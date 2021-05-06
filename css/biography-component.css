@@ -1,0 +1,12 @@
+.biography-content-wrapper {
+    display: grid;
+    grid-template-areas:
+    "section section section";
+    width: 80%;
+    margin: 0 auto;
+}
+.biography-content-wrapper > section > p {
+    margin: 20px;
+    font-size: 20px;
+    margin: 30px 10px;
+}

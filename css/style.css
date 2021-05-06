@@ -1,0 +1,21 @@
+@import 'variables.css';
+@import 'reset.css';
+@import 'header-styles.css';
+@import 'animations.css';
+@import 'table.css';
+@import 'elements.css';
+@import 'biography-component.css';
+@import 'gallery-component.css';
+@import 'related-links.css';
+@import 'footer-component.css';
+@import 'responsive.css';
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}

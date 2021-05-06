@@ -1,0 +1,46 @@
+@media ( max-width: 500px ) {
+    .content-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .desktop_menu {
+        display: none;
+    }
+    .biography-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .label > h1 {
+        font-size: 18px;
+        width: auto;
+    }
+    table {
+        margin: 0;
+    }
+    tbody > * > * {
+        font-size: 12px;
+    }
+   
+    .links-content-wrapper {
+        flex-direction: column;
+    }
+    .used-articles > * {
+        font-size: 10px;
+        flex-direction: column;
+    }
+}
+
+@media ( max-width: 600px ) {
+    .summary-label-wrapper {
+        background-position-x: -420px;
+    }
+    footer {
+        padding: 10px;
+        margin: 0;
+    }
+    footer > * > *  {
+        font-size: 12px;
+    }
+    
+}

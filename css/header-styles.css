@@ -1,0 +1,38 @@
+@import 'variables.css';
+
+header {
+    border-bottom: 2px solid gray;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: var(--violet);
+    display: flex;
+}
+
+nav { margin-left: auto }
+
+nav > ul {
+            display: flex !important;
+            list-style-type: none;
+            height: 100%;
+        } 
+        
+nav > ul > li{
+    align-self: center;
+}
+
+nav > ul > li > button {
+    background-color: var(--gray);
+    color: var(--violet);
+    padding: 10px 20px;
+    margin: auto 10px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.logo {
+    padding: 20px;
+    font-size: 26px;
+    color: var(--gray);
+}

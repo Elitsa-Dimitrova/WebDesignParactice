@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+        <meta name="author" content="Елица Димитрова, Унибит, ИКН, 2ра група">
+
+        <title>Ada Lovelace</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="content-wrapper">
+            <header>
+                <div class="logo"><strong>Ада Лъвлейс</strong></div>
+
+                <nav class="desktop_menu">
+                    <ul>
+                        <li><button class="go-to-summary">Накратко</button></li>
+                        <li><button class="go-to-bio">Биография</button></li>
+                        <li><button class="go-to-gallery">Галерия</button></li>
+                        <li><button class="go-to-links">Полезни линкове</button></li>
+                    </ul>
+
+                    <script>
+                        document.getElementsByClassName("go-to-summary")[0].addEventListener("click", goToSummary);
+                        document.getElementsByClassName("go-to-bio")[0].addEventListener("click", goToBio);
+                        document.getElementsByClassName("go-to-gallery")[0].addEventListener("click", goToGallery);
+                        document.getElementsByClassName("go-to-links")[0].addEventListener("click", goToLinks);
+                        
+
+                        function goToSummary() {
+                                var gallery = document.getElementsByClassName("summary")[0];
+                                gallery.scrollIntoView();
+                        }
+
+                        function goToBio() {
+                                var gallery = document.getElementsByClassName("bio")[0];
+                                gallery.scrollIntoView();
+                        }
+                        
+                        function goToGallery() {
+                            var gallery = document.getElementsByClassName("gallery")[0];
+                            gallery.scrollIntoView();
+                        }
+
+                        function goToLinks() {
+                                var gallery = document.getElementsByClassName("related-links")[0];
+                                gallery.scrollIntoView();
+                        }
+                    </script>
+                </nav>
+            </header>
+
+            <main>
+                <div class="summary">
+                    <div class="summary-label-wrapper">
+                        <div class="label">
+                            <h1>Ада Лъвлейс</h1>
+                        </div>
+                    </div>
+                    <div class="summary-info-table-wrapper">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th></th>
+                                    <th>Дата</th>
+                                    <th>Местоположение</th>
+                                </tr>
+                                <tr>
+                                    <td>Родена</td>
+                                    <td>10 декември 1815 г.</td>
+                                    <td>Лондон, Великобритания</td>
+                                </tr>
+                                <tr>
+                                    <td>Починала</td>
+                                    <td>27 ноември 1852 г. (36 г.)</td>
+                                    <td>Лондон, Великобритания</td>
+                                </tr>
+                                <tr>
+                                    <td>Погребана</td>
+                                    <td></td>
+                                    <td>Хъкнал, Великобритания</td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bio">
+                    <div class="label">
+                        <h1>Биография</h1>
+                    </div>
+                    <div class="biography-content-wrapper">
+                        <section class="bio-info-section">
+                            <p>
+                                Ада се ражда на 10 декември 1815. Като единствено законно дете на поета лорд Байрон, Ада наследява бурния романтически
+                                дух на баща си – черта, която майка ѝ Анабела Милбанк се опитва да неутрализира, като я праща на уроци по математика.
+                                Ада обаче така и не вижда баща си.
+                            </p>
+                            
+                            <div class="img-wrapper">
+                                <img src='assets/ada-images/ada-as-a-child.jpg' />
+                            </div>
+                            <p>
+                                Интересът ѝ към машините се разпалва. В знаменитата си реч
+                                пред Камарата на лордовете баща ѝ защитава лудитите, чупещи тези станове от страх за това, което
+                                техниката може да причини на човечеството. Aда ги възприема романтично и вижда връзка с онова, което в наши дни
+                                наричаме компютри.
+                            </p>
+                            
+                        </section>
+                        
+                        <section class="bio-info-section">
+                            <p>
+                                Бракът на родителите ѝ се разпада още в първите седмици след раждането ѝ. Анабела Милбанк взема бебето и отива да живее
+                                при родителите си. Ада израства, без да знае кой е баща ѝ. Лейди Байрон иска да е сигурна, че Ада няма да стане като
+                                баща си, и една част от стратегията ѝ е да подложи момичето на математическо образование.
+                            </p>
+                            <div class="img-wrapper">
+                                <img src='assets/ada-images/ada-lovelace-margaret-sarah-carpente.jpg' />
+                            </div>
+                            <p>
+                                През 1835 Ада се омъжва за Уилям Кинг – утвърден в обществото и финансово стабилен мъж. Бракът стабилизира и
+                                уравновесява живота ѝ, а наред с това ѝ позволява да избяга от зависимостта на властната ѝ майка. Ражда три деца, но
+                                влечението ѝ към математиката не само не стихва, но и се увеличава; то става духовно.
+                            </p>
+                        </section>
+                        <section class="bio-info-section">
+                            <p>
+                                Въпреки тези усилия Ада развива някои от склонностите на баща си. Още в юношеска възраст има връзка с един от частните
+                                си учители и когато са разкрити. Освен това Ада страда от различни заболявания, както
+                                физически, така и психически. По-късно обаче Ада възприема убеждението на майка си, че вглъбяването в математиката може
+                                да укроти байроновските ѝ наклонности.
+                            </p>
+                            <div class="img-wrapper">
+                                <img src='assets/ada-images/Ada_Lovelace_piano.jpg'/>
+                            </div>
+                            <p>
+                            През последната година на живота си води мъчителна битка с тумор на матката. Умира през 1852 на 36.
+                            В течение на годините Ада Лъвлейс е почитана като символ на феминизма и компютърен пионер. Министерството на
+                            отбраната
+                            на САЩ кръщава силно развития си обектноориентиран език „Ада“.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="gallery">
+                    <div class="label">
+                        <h1>Галерия</h1>
+                    </div>
+
+                    <div class="gallery-wrapper">
+                        <button class="prev-butn">Предишна</button>
+
+                        <div class="gallery-img-wrapper">
+                            <img class="currImage" src="assets/ada-images/ada-as-a-child.jpg" />
+                        </div>
+                        
+                        <button class="next-butn">Следваща</button>
+                    </div>
+
+                    <script language="JavaScript">
+                        var adaGalleryImages = new Array(
+                            'assetsada-images/ada-as-a-child.jpg',
+                            'assets/ada-images/ada-lovelace-margaret-sarah-carpente.jpg',
+                            'assets/ada-images/Ada_lovelace.jpg',
+                            'assets/ada-images/Ada_Lovelace_child_portrait_Somerville_College.jpg',
+                            'assets/ada-images/Ada_Lovelace_color.svg',
+                            'assets/ada-images/Ada_Lovelace_in_1852.jpg',
+                            'assets/ada-images/Ada_Lovelace_piano.jpg'
+                        )
+
+                        var currImageIndex = 0;
+
+
+                        document.getElementsByClassName("prev-butn")[0].addEventListener("click", doPrevious);
+                        document.getElementsByClassName("next-butn")[0].addEventListener("click", doNext, false);
+
+                        function doPrevious() {
+                            if (currImageIndex > 0) {
+                                currImageIndex--
+                                document.getElementsByClassName("currImage")[0].src = adaGalleryImages[currImageIndex]
+                            }
+                        }
+
+                        function doNext() {
+                            if (currImageIndex < adaGalleryImages.length - 1) {
+                                currImageIndex++;
+                                document.getElementsByClassName("currImage")[0].src = adaGalleryImages[currImageIndex]
+                            }
+                        }
+                    </script>
+
+                </div>
+
+                <div class="related-links">
+                    <div class="label">
+                        <h1>Полезни линкве</h1>
+                    </div>
+
+                    <div class="links-content-wrapper">
+                        <div class="related-links-content-wrapper">
+                            <h3> В живота си Ада се е сблъскала с впечатляващи личност. <br />Прочетете и за тях: </h3>
+                            <ul>
+                                <li><a href="https://en.wikipedia.org/wiki/Augustus_De_Morgan">Огъстъс де Морган</a></li>
+                                <li><a
+                                        href="https://bg.wikipedia.org/wiki/%D0%9C%D0%B5%D1%80%D0%B8_%D0%A1%D0%B0%D0%BC%D1%8A%D1%80%D0%B2%D0%B8%D0%BB">Мери
+                                        Самървил</a></li>
+                                <li><a
+                                        href="https://bg.wikipedia.org/wiki/%D0%94%D0%B6%D0%BE%D1%80%D0%B4%D0%B6_%D0%91%D0%B0%D0%B9%D1%80%D0%BE%D0%BD">Джордж
+                                        Байрон</a></li>
+                                <li><a href="https://bg.wikipedia.org/wiki/%D0%A7%D0%B0%D1%80%D0%BB%D0%B7_%D0%91%D0%B0%D0%B1%D0%B8%D0%B4%D0%B6">
+                                        Чарлз Бабидж </a></li>
+                            </ul>
+                        </div>
+                        
+                        <div section-decoration-wrapper>
+                            <img src="assets/ada-images/girls-can-code.jpg" />
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+            <footer>
+            <div class="used-articles">
+                <h5>Изполвани статии:</h5>
+                <ul>
+                    <li>
+                        <a href="https://bg.wikipedia.org/wiki/%D0%90%D0%B4%D0%B0_%D0%9B%D1%8A%D0%B2%D0%BB%D0%B5%D0%B9%D1%81">
+                            Статия 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.economy.bg/history/view/16597/Vizhte-istoriyata-na-pyrviya-programist-v-sveta-">
+                            Статия 2
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="author">
+                <h3>2021 &copy unibit Елица Димитрова</h3>
+            </div>
+            
+        </footer>
+    </div>
+</body>
+    
+
+</html>
